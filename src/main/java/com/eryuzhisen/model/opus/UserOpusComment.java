@@ -10,6 +10,7 @@ public class UserOpusComment implements Serializable{
 	
 	private long id;
 	private long userId;
+	private int catalogId;
 	private int chapterId;
 	private int toCommentId;
 	private String comment;
@@ -70,6 +71,12 @@ public class UserOpusComment implements Serializable{
 	}
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
+	}
+	public int getCatalogId() {
+		return catalogId;
+	}
+	public void setCatalogId(int catalogId) {
+		this.catalogId = catalogId;
 	}
 	
 }

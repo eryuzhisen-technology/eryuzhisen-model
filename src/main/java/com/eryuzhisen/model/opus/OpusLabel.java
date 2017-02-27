@@ -11,6 +11,7 @@ public class OpusLabel implements Serializable{
 	private static final long serialVersionUID = -6751335065919130210L;
 	
 	private int id;
+	private int categoryId;
 	private String labelTxt;
 	private Date createTime;
 	private Date updateTime;
@@ -37,6 +38,12 @@ public class OpusLabel implements Serializable{
 	}
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
+	}
+	public int getCategoryId() {
+		return categoryId;
+	}
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
 	}
 
 }
