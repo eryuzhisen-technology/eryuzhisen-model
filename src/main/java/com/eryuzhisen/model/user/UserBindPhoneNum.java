@@ -10,6 +10,7 @@ public class UserBindPhoneNum implements Serializable{
 
 	private long id;
 	private long userId;
+	private String phoneNum;
 	private String password;
 	private Date createTime;
 	private Date updateTime;
@@ -42,6 +43,12 @@ public class UserBindPhoneNum implements Serializable{
 	}
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
+	}
+	public String getPhoneNum() {
+		return phoneNum;
+	}
+	public void setPhoneNum(String phoneNum) {
+		this.phoneNum = phoneNum;
 	}
 	
 }
