@@ -12,7 +12,7 @@ public class UserOpusComment implements Serializable{
 	private long userId;
 	private int catalogId;
 	private int chapterId;
-	private int toCommentId;
+	private long toCommentId;
 	private String comment;
 	private int praiseCount;
 	private short available;
@@ -36,10 +36,10 @@ public class UserOpusComment implements Serializable{
 	public void setChapterId(int chapterId) {
 		this.chapterId = chapterId;
 	}
-	public int getToCommentId() {
+	public long getToCommentId() {
 		return toCommentId;
 	}
-	public void setToCommentId(int toCommentId) {
+	public void setToCommentId(long toCommentId) {
 		this.toCommentId = toCommentId;
 	}
 	public String getComment() {
