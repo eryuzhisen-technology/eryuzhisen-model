@@ -15,6 +15,7 @@ public class UserOpusCatalog implements Serializable{
 	private String catalogDesc;
 	private String catalogLabel;
 	private short catalogStatus;
+	private int catalogSort;
 	private Date createtime;
 	private Date updateTime;
 	public int getId() {
@@ -71,5 +72,11 @@ public class UserOpusCatalog implements Serializable{
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
+    public int getCatalogSort() {
+        return catalogSort;
+    }
+    public void setCatalogSort(int catalogSort) {
+        this.catalogSort = catalogSort;
+    }
 	
 }

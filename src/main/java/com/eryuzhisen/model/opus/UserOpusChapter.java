@@ -11,6 +11,7 @@ public class UserOpusChapter implements Serializable{
 	private int id;
 	private long userId;
 	private int catalogId;
+	private int chapterIndex;
 	private String chapterTitle;
 	private String chapterDesc;
 	private String chapterContent;
@@ -85,5 +86,11 @@ public class UserOpusChapter implements Serializable{
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
+    public int getChapterIndex() {
+        return chapterIndex;
+    }
+    public void setChapterIndex(int chapterIndex) {
+        this.chapterIndex = chapterIndex;
+    }
 	
 }
