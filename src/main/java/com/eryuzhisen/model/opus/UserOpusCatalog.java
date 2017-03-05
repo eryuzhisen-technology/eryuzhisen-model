@@ -13,9 +13,12 @@ public class UserOpusCatalog implements Serializable{
 	private int categoryId;
 	private String catalogTitle;
 	private String catalogDesc;
+	private String catalogCoverUrl;
 	private String catalogLabel;
 	private short catalogStatus;
 	private int catalogSort;
+	private int commentCount;
+	private int praiseCount;
 	private Date createtime;
 	private Date updateTime;
 	public int getId() {
@@ -77,6 +80,24 @@ public class UserOpusCatalog implements Serializable{
     }
     public void setCatalogSort(int catalogSort) {
         this.catalogSort = catalogSort;
+    }
+    public String getCatalogCoverUrl() {
+        return catalogCoverUrl;
+    }
+    public void setCatalogCoverUrl(String catalogCoverUrl) {
+        this.catalogCoverUrl = catalogCoverUrl;
+    }
+    public int getCommentCount() {
+        return commentCount;
+    }
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
+    }
+    public int getPraiseCount() {
+        return praiseCount;
+    }
+    public void setPraiseCount(int praiseCount) {
+        this.praiseCount = praiseCount;
     }
 	
 }
