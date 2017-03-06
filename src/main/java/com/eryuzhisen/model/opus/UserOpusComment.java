@@ -13,6 +13,7 @@ public class UserOpusComment implements Serializable{
 	private int catalogId;
 	private int chapterId;
 	private long toCommentId;
+	private long toReplyCommentId;
 	private String comment;
 	private int praiseCount;
 	private short available;
@@ -78,5 +79,11 @@ public class UserOpusComment implements Serializable{
 	public void setCatalogId(int catalogId) {
 		this.catalogId = catalogId;
 	}
+    public long getToReplyCommentId() {
+        return toReplyCommentId;
+    }
+    public void setToReplyCommentId(long toReplyCommentId) {
+        this.toReplyCommentId = toReplyCommentId;
+    }
 	
 }
