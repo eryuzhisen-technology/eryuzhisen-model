@@ -18,6 +18,8 @@ public class UserOpusChapter implements Serializable{
 	private long praiseCount;
 	private long commentCount;
 	private short chapterStatus;
+	private short auditStatus;
+	private String auditRemark;
 	private Date createTime;
 	private Date updateTime;
 	public int getId() {
@@ -91,6 +93,18 @@ public class UserOpusChapter implements Serializable{
     }
     public void setChapterIndex(int chapterIndex) {
         this.chapterIndex = chapterIndex;
+    }
+    public short getAuditStatus() {
+        return auditStatus;
+    }
+    public void setAuditStatus(short auditStatus) {
+        this.auditStatus = auditStatus;
+    }
+    public String getAuditRemark() {
+        return auditRemark;
+    }
+    public void setAuditRemark(String auditRemark) {
+        this.auditRemark = auditRemark;
     }
 	
 }
