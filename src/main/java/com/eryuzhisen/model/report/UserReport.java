@@ -14,8 +14,7 @@ public class UserReport implements Serializable{
 	private int contentId;
 	/*举报内容类型*/
 	private short contentType;
-	private short reportType;
-	/*其他原因内容*/
+	/*举报原因*/
 	private String reportReason;
 	private short reportStatus;
 	private Date createTime;
@@ -43,12 +42,6 @@ public class UserReport implements Serializable{
 	}
 	public void setContentType(short contentType) {
 		this.contentType = contentType;
-	}
-	public short getReportType() {
-		return reportType;
-	}
-	public void setReportType(short reportType) {
-		this.reportType = reportType;
 	}
 	public String getReportReason() {
 		return reportReason;
