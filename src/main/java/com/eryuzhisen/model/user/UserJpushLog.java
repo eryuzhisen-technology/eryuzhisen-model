@@ -15,6 +15,8 @@ public class UserJpushLog implements Serializable {
 	private short jpushType;
 	private String attach;
 	private String mediaUrl;
+	private short messageType;
+	private short available;
 	public int getId() {
 		return id;
 	}
@@ -86,5 +88,21 @@ public class UserJpushLog implements Serializable {
 	public void setMediaUrl(String mediaUrl) {
 		this.mediaUrl = mediaUrl;
 	}
+
+    public short getMessageType() {
+        return messageType;
+    }
+
+    public void setMessageType(short messageType) {
+        this.messageType = messageType;
+    }
+
+    public short getAvailable() {
+        return available;
+    }
+
+    public void setAvailable(short available) {
+        this.available = available;
+    }
 
 }
