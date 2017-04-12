@@ -11,6 +11,7 @@ public class UserFeedback implements Serializable{
 	private long userId;
 	private String content;
 	private String imgUrl;
+	private short feedbackStatus;
 	private Date createTime;
 	private Date updateTime;
     public long getUserId() {
@@ -43,6 +44,11 @@ public class UserFeedback implements Serializable{
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
-	
+    public short getFeedbackStatus() {
+        return feedbackStatus;
+    }
+    public void setFeedbackStatus(short feedbackStatus) {
+        this.feedbackStatus = feedbackStatus;
+    }
 
 }
