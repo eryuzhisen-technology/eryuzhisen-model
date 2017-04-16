@@ -21,6 +21,7 @@ public class UserOpusCatalog implements Serializable{
 	private int praiseCount;
 	private short auditStatus;
 	private String auditRemark;
+	private short level;
 	private Date createtime;
 	private Date updateTime;
 	public int getId() {
@@ -112,6 +113,12 @@ public class UserOpusCatalog implements Serializable{
     }
     public void setAuditRemark(String auditRemark) {
         this.auditRemark = auditRemark;
+    }
+    public short getLevel() {
+        return level;
+    }
+    public void setLevel(short level) {
+        this.level = level;
     }
 	
 }
