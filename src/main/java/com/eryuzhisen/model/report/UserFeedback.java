@@ -13,6 +13,7 @@ public class UserFeedback implements Serializable{
 	private String content;
 	private String imgUrl;
 	private short feedbackStatus;
+	private String feedbackRemark;
 	private Date createTime;
 	private Date updateTime;
     public long getUserId() {
@@ -56,6 +57,12 @@ public class UserFeedback implements Serializable{
     }
     public void setContactInfo(String contactInfo) {
         this.contactInfo = contactInfo;
+    }
+    public String getFeedbackRemark() {
+        return feedbackRemark;
+    }
+    public void setFeedbackRemark(String feedbackRemark) {
+        this.feedbackRemark = feedbackRemark;
     }
 
 }
