@@ -8,6 +8,7 @@ public class UserFeedback implements Serializable{
 	/**  */
 	private static final long serialVersionUID = -5960082729460707798L;
 	
+	private int feedbackId;
 	private long userId;
 	private String contactInfo;
 	private String content;
@@ -63,6 +64,12 @@ public class UserFeedback implements Serializable{
     }
     public void setFeedbackRemark(String feedbackRemark) {
         this.feedbackRemark = feedbackRemark;
+    }
+    public int getFeedbackId() {
+        return feedbackId;
+    }
+    public void setFeedbackId(int feedbackId) {
+        this.feedbackId = feedbackId;
     }
 
 }
