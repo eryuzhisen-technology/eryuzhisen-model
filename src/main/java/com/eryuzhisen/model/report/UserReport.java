@@ -17,6 +17,8 @@ public class UserReport implements Serializable{
 	/*举报原因*/
 	private String reportReason;
 	private short reportStatus;
+	/*附加原因*/
+	private String addReason;
 	private Date createTime;
 	private Date updateTime;
 	public int getId() {
@@ -67,5 +69,11 @@ public class UserReport implements Serializable{
 	public void setReportStatus(short reportStatus) {
 		this.reportStatus = reportStatus;
 	}
+    public String getAddReason() {
+        return addReason;
+    }
+    public void setAddReason(String addReason) {
+        this.addReason = addReason;
+    }
 	
 }
