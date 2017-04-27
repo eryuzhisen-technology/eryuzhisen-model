@@ -22,6 +22,7 @@ public class UserOpusCatalog implements Serializable{
 	private short auditStatus;
 	private String auditRemark;
 	private short level;
+	private short deleteFlag;
 	private Date createtime;
 	private Date updateTime;
 	public int getId() {
@@ -119,6 +120,12 @@ public class UserOpusCatalog implements Serializable{
     }
     public void setLevel(short level) {
         this.level = level;
+    }
+    public short getDeleteFlag() {
+        return deleteFlag;
+    }
+    public void setDeleteFlag(short deleteFlag) {
+        this.deleteFlag = deleteFlag;
     }
 	
 }

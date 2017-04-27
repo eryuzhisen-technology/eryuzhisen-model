@@ -20,6 +20,7 @@ public class UserOpusChapter implements Serializable{
 	private short chapterStatus;
 	private short auditStatus;
 	private String auditRemark;
+	private short deleteFlag;
 	private Date createTime;
 	private Date updateTime;
 	public int getId() {
@@ -105,6 +106,12 @@ public class UserOpusChapter implements Serializable{
     }
     public void setAuditRemark(String auditRemark) {
         this.auditRemark = auditRemark;
+    }
+    public short getDeleteFlag() {
+        return deleteFlag;
+    }
+    public void setDeleteFlag(short deleteFlag) {
+        this.deleteFlag = deleteFlag;
     }
 	
 }
