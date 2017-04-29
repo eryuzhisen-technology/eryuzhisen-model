@@ -23,6 +23,8 @@ public class UserOpusCatalog implements Serializable{
 	private String auditRemark;
 	private short level;
 	private short deleteFlag;
+	//0 默认 1 热门 2 优秀
+	private short catalogType;
 	private Date createtime;
 	private Date updateTime;
 	public int getId() {
@@ -127,5 +129,10 @@ public class UserOpusCatalog implements Serializable{
     public void setDeleteFlag(short deleteFlag) {
         this.deleteFlag = deleteFlag;
     }
-	
+    public short getCatalogType() {
+        return catalogType;
+    }
+    public void setCatalogType(short catalogType) {
+        this.catalogType = catalogType;
+    }
 }
