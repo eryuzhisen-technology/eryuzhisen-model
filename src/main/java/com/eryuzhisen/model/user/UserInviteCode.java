@@ -10,9 +10,8 @@ public class UserInviteCode implements Serializable{
     
     private int id;
     private Long userId;
-    private Long invitedUserId;
     private String inviteCode;
-    private short inviteStatus;
+    private short inviteTimes;
     private Date createTime;
     private Date updateTime;
     public int getId() {
@@ -45,17 +44,11 @@ public class UserInviteCode implements Serializable{
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
-    public Long getInvitedUserId() {
-        return invitedUserId;
+    public short getInviteTimes() {
+        return inviteTimes;
     }
-    public void setInvitedUserId(Long invitedUserId) {
-        this.invitedUserId = invitedUserId;
-    }
-    public short getInviteStatus() {
-        return inviteStatus;
-    }
-    public void setInviteStatus(short inviteStatus) {
-        this.inviteStatus = inviteStatus;
+    public void setInviteTimes(short inviteTimes) {
+        this.inviteTimes = inviteTimes;
     }
     
 }

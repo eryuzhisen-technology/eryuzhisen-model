@@ -17,6 +17,7 @@ public class User implements Serializable{
 	private String avatarUrl;
 	private String signature;
 	private short gender;
+	private String inviteCode;
 	private Date createTime;
 	private Date updateTime;
 	public long getId() {
@@ -84,6 +85,12 @@ public class User implements Serializable{
     }
     public void setGender(short gender) {
         this.gender = gender;
+    }
+    public String getInviteCode() {
+        return inviteCode;
+    }
+    public void setInviteCode(String inviteCode) {
+        this.inviteCode = inviteCode;
     }
 	
 }
