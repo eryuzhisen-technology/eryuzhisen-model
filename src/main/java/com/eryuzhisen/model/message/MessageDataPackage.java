@@ -1,5 +1,7 @@
 package com.eryuzhisen.model.message;
 
+import java.util.Map;
+
 import com.eryuzhisen.model.attach.Attach;
 
 public class MessageDataPackage {
@@ -9,6 +11,8 @@ public class MessageDataPackage {
     private UserProfile receiver;
     
     private MessageContent content;
+    
+    private Map<String,String> arguments;
     
     private Attach attach;
 
@@ -43,6 +47,13 @@ public class MessageDataPackage {
     public void setAttach(Attach attach) {
         this.attach = attach;
     }
-    
+
+    public Map<String, String> getArguments() {
+        return arguments;
+    }
+
+    public void setArguments(Map<String, String> arguments) {
+        this.arguments = arguments;
+    }
     
 }
