@@ -12,9 +12,13 @@ public class UserOpusCatalog implements Serializable{
 	private long userId;
 	private int categoryId;
 	private String catalogTitle;
+	private String catalogAuditTitle;
 	private String catalogDesc;
+	private String catalogAuditDesc;
 	private String catalogCoverUrl;
+	private String catalogAuditCoverUrl;
 	private String catalogLabel;
+	private String catalogAuditLabel;
 	private short catalogStatus;
 	private int catalogSort;
 	private int commentCount;
@@ -135,4 +139,29 @@ public class UserOpusCatalog implements Serializable{
     public void setCatalogType(short catalogType) {
         this.catalogType = catalogType;
     }
+    public String getCatalogAuditTitle() {
+        return catalogAuditTitle;
+    }
+    public void setCatalogAuditTitle(String catalogAuditTitle) {
+        this.catalogAuditTitle = catalogAuditTitle;
+    }
+    public String getCatalogAuditDesc() {
+        return catalogAuditDesc;
+    }
+    public void setCatalogAuditDesc(String catalogAuditDesc) {
+        this.catalogAuditDesc = catalogAuditDesc;
+    }
+    public String getCatalogAuditCoverUrl() {
+        return catalogAuditCoverUrl;
+    }
+    public void setCatalogAuditCoverUrl(String catalogAuditCoverUrl) {
+        this.catalogAuditCoverUrl = catalogAuditCoverUrl;
+    }
+    public String getCatalogAuditLabel() {
+        return catalogAuditLabel;
+    }
+    public void setCatalogAuditLabel(String catalogAuditLabel) {
+        this.catalogAuditLabel = catalogAuditLabel;
+    }
+    
 }
