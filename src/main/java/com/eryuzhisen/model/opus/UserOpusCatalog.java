@@ -27,6 +27,10 @@ public class UserOpusCatalog implements Serializable{
 	private String auditRemark;
 	private short level;
 	private short deleteFlag;
+	//0 不允许转载 1 允许
+	private short reprintFlag;
+	//是否为翻译类作品 0 不是 1 是
+	private short translateFlag;
 	//0 默认 1 热门 2 优秀
 	private short catalogType;
 	private Date createtime;
@@ -162,6 +166,18 @@ public class UserOpusCatalog implements Serializable{
     }
     public void setCatalogAuditLabel(String catalogAuditLabel) {
         this.catalogAuditLabel = catalogAuditLabel;
+    }
+    public short getReprintFlag() {
+        return reprintFlag;
+    }
+    public void setReprintFlag(short reprintFlag) {
+        this.reprintFlag = reprintFlag;
+    }
+    public short getTranslateFlag() {
+        return translateFlag;
+    }
+    public void setTranslateFlag(short translateFlag) {
+        this.translateFlag = translateFlag;
     }
     
 }
