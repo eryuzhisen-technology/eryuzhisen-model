@@ -1,7 +1,7 @@
 package com.eryuzhisen.model.mq.json;
 
 public class MqMessageJson {
-    private String msg_type;//1 点赞 2 评论 3 关注 4 收藏 5 审核
+    private String msg_type;//1 点赞 2 评论 3 关注 4 收藏 5 审核 6 浏览
     private String master_user_id;
     private String user_id;
     private String catalog_id;

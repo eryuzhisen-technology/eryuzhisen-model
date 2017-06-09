@@ -8,17 +8,17 @@ public class UserOpusWatchHistory implements Serializable{
 	/**  */
 	private static final long serialVersionUID = -5668139625909240434L;
 
-	private int id;
+	private long id;
 	private long userId;
 	private int catalogId;
 	private int chapterId;
 	private int times;
 	private Date createTime;
 	private Date updateTime;
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	public long getUserId() {
