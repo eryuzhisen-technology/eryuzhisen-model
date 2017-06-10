@@ -17,6 +17,8 @@ public class UserJpushLog implements Serializable {
 	private String mediaUrl;
 	private short messageType;
 	private short available;
+	private Date updateTime;
+	private short read;
 	public int getId() {
 		return id;
 	}
@@ -105,4 +107,20 @@ public class UserJpushLog implements Serializable {
         this.available = available;
     }
 
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public short getRead() {
+        return read;
+    }
+
+    public void setRead(short read) {
+        this.read = read;
+    }
+    
 }
