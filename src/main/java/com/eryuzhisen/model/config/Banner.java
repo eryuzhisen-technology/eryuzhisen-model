@@ -19,6 +19,7 @@ public class Banner implements Serializable{
 	private String clientVersion;
 	private short clientType;
 	private String jump;
+	private short available;
 	private Date createTime;
 	private Date updateTime;
 	public int getId() {
@@ -75,5 +76,10 @@ public class Banner implements Serializable{
     public void setJump(String jump) {
         this.jump = jump;
     }
-	
+    public short getAvailable() {
+        return available;
+    }
+    public void setAvailable(short available) {
+        this.available = available;
+    }
 }
